@@ -1,0 +1,269 @@
+.glow-effect{
+    position: absolute;
+    left: 0;
+    top: -500px;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+}
+
+.case-studies{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 130px 150px 130px;
+
+    .title{
+        width: 100%;
+        margin-top: 25px;
+        h1{
+            font-family: 'Brandon Text';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 63px;
+            align-items: center;
+            letter-spacing: 0.035em;
+            color: #FFFFFF;       
+            text-align: center;    
+        }
+        span{
+            background: linear-gradient(94.54deg, #A71DA3 7.45%, #4053D4 90.12%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+                               
+        }
+    }
+
+    .case-studies-buttons{
+        margin-top: 70px;
+        button{
+            background-color: #121212;
+            background-clip: padding-box;
+            border: solid 1px #A71DA3;
+            position: relative;        
+            cursor: pointer;
+            transition: 0.1s;
+
+            width: 302px;
+            height: 53px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin: 10px;
+        }
+       
+
+        #case-study1{
+            background: linear-gradient(92.31deg, #FD6585 0%, #0D25B9 125.17%);
+            
+        }
+    }
+
+    .case-studies-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-top: 120px;
+
+
+        .image-container{
+            border-radius: 20px;
+            margin-right: 50px;
+    
+            img{
+                border-radius: 20px;
+                box-shadow: 0px 4px 50px 5px #A71DA3;
+                width: 100%;
+            }
+        }
+
+        .info-container{
+            h1{
+                max-width:506px;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 52px;
+                color: #FFFFFF;                
+            }
+            p{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;   
+                max-width: 467px;    
+                margin-top: 20px;         
+            }
+
+            .button-container{
+                height: auto;
+                margin-top: 60px;
+                a{
+                    padding: 18px 40px;
+                    background: linear-gradient(135deg, #FD6585 0%, #0D25B9 100%);
+                    box-shadow: 0px 0px 47px 5px rgba(149, 26, 145, 0.21);
+                    border-radius: 20px; 
+                    font-family: 'Brandon Text';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 35px;
+                    letter-spacing: 0.035em;
+                    color: #FFFFFF;                
+                    text-decoration: none;
+                }
+                
+        
+            }
+        }
+    }
+    #content2 , #content3{
+        display: none;
+    }
+}
+
+
+@media(max-width:1250px){
+    .case-studies{
+        .title{
+            h1{
+                font-size: 45px;
+                 line-height: 53px;
+            }
+        }
+        .case-studies-buttons{
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .case-studies-content{
+            margin-top: 80px;
+        }
+    }
+}
+
+@media(max-width:1150px){
+    .case-studies{
+        padding: 100px 50px 150px 50px;
+
+        .case-studies-content{
+            flex-direction: column;
+
+            .image-container{
+                margin-right: 0;
+                img{
+                    max-width: 400px;
+                }
+            }
+
+            .info-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 80%;
+                margin-top: 40px;
+
+                h1{
+                    max-width: 100%;
+                    text-align: center;
+                }
+                p{
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+        
+}
+
+
+@media(max-width:768px){
+
+    .case-studies{
+        .title{
+            h1{
+                font-size: 40px;
+                 line-height: 50px;
+            }
+        }
+
+        .case-studies-content{
+            .info-container{
+                h1{
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:550px){
+    .case-studies{
+        padding: 70px 30px 100px 30px;
+
+        .case-studies-buttons{
+            button{
+                width: 100%;
+                margin: 5px;
+                height: 100%;
+                padding: 7px 0;
+            }
+        }
+
+        .case-studies-content{
+            margin-top: 50px;
+            
+            .info-container{
+                width: 100%;
+
+                h1{
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .button-container{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 30px;
+        
+                    a{
+                        width: 100%;
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+

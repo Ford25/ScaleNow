@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Case Study 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+     <!--AOS ANIMATION LINK-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!--FAVICON-->
+      <link rel="icon" type="image/png" href="images/logo.svg">
+  </head>
+  <body>
+    <header id="navbar" class="navbar">
+      <nav class="navbar-container container">
+        <a href="index.html" class="home-link">
+          <img class="nav-logo" src="images/logo.svg" style="width: 35px;" alt="">
+        </a>
+        <button type="button" class="navbar-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar-menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div id="navbar-menu" class="detached">
+          <ul class="navbar-links">
+            <li class="navbar-item"><a class="navbar-link" href="index.html#about-us">About Us</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="index.html#case-studies">Case Studies</a></li>
+            <li class="navbar-item"><a class="navbar-link strategy-calls" href="index.html#free-strategy-call">Free Strategy Call</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <div class="case-study">
+
+        <h1 class="title"data-aos="zoom-in">Handmade Leather Bags</h1>
+
+        <div class="image-container"  data-aos="flip-up">
+            <div class="image">
+              <img src="images/case2a.svg" alt="">
+            </div>
+            <div class="image">
+              <img src="images/case2b.svg" alt="">
+            </div>
+        </div>
+
+        <p data-aos="zoom-in">
+            US-based brand selling handcrafted luxury women bags, scaled successfully running only Facebook Ads from 2021 to 2022 using a mix of different creative variants and audience targeting tests.
+            <br><br>
+            Constantly testing creatives proved to be a very significant step in the scaling process of this account. After finding winner creatives, the audience testing went a lot smoother and produced better overall results.
+            <br><br>
+            Well-rounded targeting - we've tested a lot of different interest-based audiences separately, such as international brands and famous fashion figures, and then also used stacking for winner interests and value-based lookalike audiences.
+        </p>
+
+        <div class="features-container">
+            <div class="feature" data-aos="fade-up" data-aos-delay="100">
+              <img src="images/checked 1.png" alt="">
+              <h1>236% Increase in Year to Date Revenue</h1>
+            </div>
+
+            <div class="feature" data-aos="fade-up" data-aos-delay="200">
+              <img src="images/checked 1.png" alt="">
+              <h1>34% Increase in the Conversion Rate</h1>
+            </div>
+
+            <div class="feature" data-aos="fade-up" data-aos-delay="300">
+              <img src="images/checked 1.png" alt="">
+              <h1>202% Increase in the Number of Orders</h1>
+            </div>
+            
+            <div class="feature" data-aos="fade-up" data-aos-delay="400">
+              <img src="images/checked 1.png" alt="">
+              <h1>x4.5+ Store ROAS using only Facebook Ads in 2022</h1>
+            </div>
+
+            <div class="feature" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/checked 1.png" alt="">
+                <h1>239% Increase in Spend and Successful Scale</h1>
+              </div>
+        </div>
+
+        <div class="button-container">
+            <a href="https://calendly.com/josephscalenow" target="_blank">Schedule a Call</a>
+          </div>
+    </div>
+
+    
+    <!--FOOTER--->
+
+    <div class="footer">
+      <h1>© 2023 ScaleNow Agency. All rights reserved</h1>
+    </div>
+
+
+    <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+    </script>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/nav-color.js"></script>
+    <script src="javascript/changeCaseStudy.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="javascript/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="javascript/swiper.js"></script>
+
+    <!-- ANIMATION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+  </body>
+</html>

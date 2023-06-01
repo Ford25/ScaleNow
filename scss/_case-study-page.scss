@@ -1,0 +1,250 @@
+.glow-effect1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    img{
+        width: 100%;
+    }
+}
+.glow-effect2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+.case-study{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    padding: 180px 130px 150px 130px;
+
+
+    .title{
+        font-family: 'Brandon Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 70px;
+        background: linear-gradient(180deg, #FD6585 0%, #0D25B9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        
+      
+    }
+
+    .image-container{
+        width: 100%;
+        display: flex;
+        margin-top: 40px;
+        border-radius: 10px;
+        justify-content: center;
+        
+        
+        .image{
+            margin: 10px;
+            width: 100%;
+            max-width: 567px;
+
+            img{
+                
+                width: 100%;
+            }
+    
+            img:hover{
+                box-shadow: 0px 4px 50px 5px #A71DA3;
+                border-radius: 10px;        
+            }
+        }
+        
+    }
+
+    p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        
+        color: #FFFFFF;
+        margin-top: 100px;        
+    }
+
+    .features-container{
+        margin-top: 85px;
+        
+        .feature{
+         
+            display: flex;
+            margin-bottom: 25px;
+            align-items: center;
+            
+            h1{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFFFFF;  
+                margin-left: 25px;                
+            }
+        }
+    }
+
+
+
+
+    .button-container{
+        height: auto;
+        margin-top: 50px;
+        a{
+            padding: 18px 40px;
+            background: linear-gradient(135deg, #FD6585 0%, #0D25B9 100%);
+            box-shadow: 0px 0px 47px 5px rgba(149, 26, 145, 0.21);
+            border-radius: 20px; 
+            font-family: 'Brandon Text';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 35px;
+            letter-spacing: 0.035em;
+            color: #FFFFFF;                
+            text-decoration: none;
+        }
+
+     
+    }
+}
+
+@media(max-width:1130px){
+    .case-study{
+        .title{
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:950px){
+    .case-study{
+        padding: 180px 50px 150px 50px;
+
+        .title{
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        p, .features-container{
+            margin-top: 50px;
+        }
+
+        .button-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container{
+            .image{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .case-study{
+        padding: 150px 50px 75px 50px;
+
+        .title{
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        p, .features-container{
+            margin-top: 50px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+        }
+
+        .button-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .features-container{
+            .feature{
+                h1{
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .image-container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .image{
+                img{
+                    max-width: 400px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:550px){
+    .case-study{
+        padding: 150px 30px 75px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title{
+            font-size: 30px;
+            line-height: 35px;
+            text-align: center;
+            width: 95%;
+        }
+
+        .image-container{
+            .image{
+                margin: 10px;
+            }
+        }
+
+        p, .features-container{
+            margin-top: 40px;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+        }
+    }
+
+ 
+}
